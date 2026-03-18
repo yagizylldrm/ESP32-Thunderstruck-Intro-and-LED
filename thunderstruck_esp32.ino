@@ -2,11 +2,11 @@
 const int ledPin = 4;
 const int buzzerPin = 5;
 
-// Notalar (B teli frekansları - Oktav biraz yukarı çekildi ki buzzer net duyulsun)
+// Notalar
 #define NOTE_B4  494 // Açık tel (0)
 #define NOTE_DS5 622 // 4. Perde
-#define NOTE_FS5 740 // 7. Perde
 #define NOTE_E5  659 // 5. Perde
+#define NOTE_FS5 740 // 7. Perde
 #define NOTE_G5  784 // 8. Perde
 
 // Riff Dizisi (0-4-0-7-0-5-0-8)
@@ -16,7 +16,7 @@ int thunderRiff1[] = {
 
 int thunderRiff2[] = {NOTE_B4, NOTE_E5,  NOTE_B4, NOTE_G5};
 
-int tempo = 90; // Hız (ms). Angus hızı için düşürebilirsin.
+int tempo = 90; // Hız (ms)
 
 void setup() {
   Serial.begin(115200);
